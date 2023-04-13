@@ -1,0 +1,333 @@
+/* =======COMMON CSS START===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+/* =======COMMON CSS END===== */
+/* =======NAVBER CSS START===== */
+#navber{
+    padding-top: 40px;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+}
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-item ul{
+    justify-content: space-between;
+    display: flex;
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+.nav-item ul li{
+    padding-left: 70px;
+
+}
+/* =======NAVBER CSS END===== */
+/* =======BANNER CSS START===== */
+#banner{
+    padding-top: 200px;
+    padding-bottom: 155px;
+    background: url(../images/ActiveBoxbg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+
+}
+#banner::after{
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(48, 51, 77, 0.846);
+    z-index: -1;
+}
+.banner-text{
+    color: #fff;
+}
+.banner-text h1{
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 65px;
+    width: 820px;
+    padding-bottom: 45px;
+    
+}
+.banner-text p {
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    width: 930px;
+    text-align: center;
+    padding-bottom: 76px;
+}
+.btn{
+    text-align: center;
+}
+.btn button{
+    background: #e84545;
+    padding: 18px 46px;
+    border: none;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+}
+
+/* =======BANNER CSS END===== */
+/* =======SERVICE CSS START===== */
+#service{
+    padding-top: 120px;
+    padding-bottom: 130px;
+}
+.service-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.service-item{
+    text-align: center;
+}
+.service-item i{
+    color: #e84545;
+    font-size: 60px;
+}
+.service-item h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #2d3033;
+    font-size: 16px;
+    padding: 30px 0 30px 0;
+}
+.service-item p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #6c7279;
+    font-size: 14px;
+    width: 433px;
+}
+.wrapper-padding{
+    padding-top: 70px;
+}
+
+/* =======SERVICE CSS END===== */
+
+/* =======PHOTO CSS START===== */
+#photo{
+    padding-bottom: 100px;
+}
+.photo-wrapper{
+    display: flex;
+}
+.photo-item img{
+    display: block;
+}
+.photo-item{
+    position: relative;
+}
+.overly{
+    background: #d84444;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    /* opacity: 0; */
+}
+.overly-text{
+    text-align: center;
+    padding: 155px 150px;
+    opacity: 0;
+    
+}
+.overly-text h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.overly-text p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+    padding-top: 15px;
+}
+.photo-item:hover .overly{
+    /* opacity: 1; */
+    transition: 0.5s;
+    height: 100%;
+}
+.photo-item:hover .overly-text{
+    opacity: 1;
+    transition: all linear 0.5s;
+}
+
+/* =======PHOTO CSS END===== */
+/* =======TEAM CSS START===== */
+#team-part{
+    padding-bottom: 100px;
+}
+.team-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.team-text{
+    width: 270px;
+}
+.team-text h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #2d3033;
+    padding-top: 30px;
+}
+.team-text h6{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #e84545;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+.team-text p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #6c7279;
+    padding: 30px 0 30px 0;
+
+}
+.team-icon a{
+    padding: 10px 15px;
+    color: #e8ecee;
+    border: 1px solid #e8ecee;
+}
+/* =======TEAM CSS END===== */
+/* =======LAST BANNER CSS START===== */
+#last-banner{
+    background: #53354a;
+}
+.last-banner-wranner{
+    display: flex;
+}
+.last-img img{
+    display: block;
+}
+.last-banner-text{
+    padding-top: 114px;
+    padding-left: 86px;
+    width: 500px;
+}
+.last-banner-text h2{
+    font-family: 'Cardo', serif;
+    color: #fff;
+    font-size: 36px;
+}
+.last-banner-text p{
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 13px;
+    padding-top: 25px;
+}
+/* =======LAST BANNER CSS END===== */
+/* =======DOWNLOAD CSS START===== */
+#download{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.download-text{
+    text-align: center;
+}
+.download-text h2{
+    color: #2d3033;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+}
+.download-text p{
+    color: #2d3033;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+/* =======DOWNLOAD CSS END===== */
+/* =======FOOTER CSS START===== */
+#footer{
+    background: #3a3e64;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    color: #fff;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-item {
+    text-align: center;
+}
+.footer-item h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.footer-item p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #9d9fb2;
+    width: 330px;
+}
+
+
+
+
+
+/* =======FOOTER CSS END===== */
+/* =======COPYRIGHT CSS START===== */
+#copyright{
+    background: #313454;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.copright-item{
+    color: #808080;
+    text-align: center;
+    width: 315px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+.copright-item h5 span{
+    color: #fff;
+}
+.copright-item h5 i{
+    color: red;
+}
+/* =======COPYRIGHT CSS END===== */
